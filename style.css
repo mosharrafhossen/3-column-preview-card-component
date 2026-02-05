@@ -1,0 +1,78 @@
+
+    :root {
+      --gold: hsl(31, 77%, 52%);
+      --cyan: hsl(184, 100%, 22%);
+      --green: hsl(179, 100%, 13%);
+      --white: hsl(0, 0%, 95%);
+      --white-75: hsla(0, 0%, 100%, 0.75);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--white);
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: 15px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 920px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .card {
+      padding: 3rem;
+      color: var(--white-75);
+    }
+
+    .card h2 {
+      font-family: 'Big Shoulders Display', cursive;
+      font-size: 2.5rem;
+      color: var(--white);
+      margin: 2rem 0 1.5rem;
+      text-transform: uppercase;
+    }
+
+    .card p {
+      line-height: 1.7;
+      margin-bottom: 5rem;
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      background: var(--white);
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .sedans { background: var(--gold); }
+    .sedans a { color: var(--gold); }
+
+    .suvs { background: var(--cyan); }
+    .suvs a { color: var(--cyan); }
+
+    .luxury { background: var(--green); }
+    .luxury a { color: var(--green); }
+
+    .card a:hover {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid var(--white);
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        grid-template-columns: 1fr;
+        margin: 1.5rem;
+      }
+    }
