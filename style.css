@@ -30,10 +30,14 @@
     .card {
       padding: 3rem;
       color: var(--white-75);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
+
     .card h2 {
-      font-family: 'Big Shoulders Display', cursive;
+      font-family: 'Big Shoulders Display', sans-serif;
       font-size: 2.5rem;
       color: var(--white);
       margin: 2rem 0 1.5rem;
@@ -42,7 +46,7 @@
 
     .card p {
       line-height: 1.7;
-      margin-bottom: 5rem;
+      margin-bottom: 2rem;
     }
 
     .card a {
@@ -53,6 +57,7 @@
       text-decoration: none;
       font-size: 14px;
       transition: 0.3s;
+      margin-top: auto;
     }
 
     .sedans { background: var(--gold); }
